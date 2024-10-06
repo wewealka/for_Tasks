@@ -6,12 +6,15 @@ import { Accordion } from "../../tasks/taskForMap/accordion/Accordion"
 import { AppTitle } from "../../tasks/taskForMap/AppTitle"
 import { TaskForTrainingUseState } from "../../tasks/TaskForUseState/TaskUSeState"
 import { Task2Button } from "../Button"
+import { OnOff } from "../OnOff/OnOff"
 import { Delimeter } from "../stupidComponents/Delimeter"
 import { Rating } from "../stupidComponents/Raiting"
 
 export const MainBasket = () => {
     return (
         <div className="MainBasket">
+            <OnOff/>
+            <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
             <FilterMethod />
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
             <TaskForTrainingUseState />
