@@ -1,4 +1,4 @@
-import { AppTitlePropsType } from "../components/AppTitle";
+import { AppTitlePropsType } from "../tasks/taskForMap/AppTitle";
 
 export let dataAppTitle:Array<AppTitlePropsType> = [
     {id:1 , title: "This is App component"},

@@ -1,12 +1,12 @@
-import { dataButtonForUseState } from "../data/dataButton";
-import { dataMoney } from "../data/dataFilterMethod";
+import { dataButtonForUseState } from "../../data/dataButton";
+import { dataMoney } from "../../data/dataFilterMethod";
 import { useState } from "react";
 
 export type FiltersValuesType = "All" | "RUBLS" | "Dollars";
 
 export function FilterMethod() {
     const [money] = useState(dataMoney);
-    const [currentMoney, setCurrentMoney] = useState(money); 
+    const [currentMoney, setCurrentMoney] = useState(money);
 
     const ButtonForUseState = (filter: FiltersValuesType) => {
         setCurrentMoney(dataButtonForUseState(money, filter));
@@ -26,7 +26,7 @@ export function FilterMethod() {
                 })}
             </ul>
             <div style={{ marginLeft: '55px' }}>
-                <button onClick={() => ButtonForUseState("All") }>All</button>
+                <button onClick={() => ButtonForUseState("All")}>All</button>
                 <button onClick={() => ButtonForUseState("RUBLS")}>RUBLS</button>
                 <button onClick={() => ButtonForUseState("Dollars")}>Dollars</button>
             </div>

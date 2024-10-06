@@ -1,4 +1,4 @@
-import { FiltersValuesType } from "../components/TaskforFilter"
+import { FiltersValuesType } from "../tasks/taskForFilter/TaskforFilter"
 
 //for useState
 export const dataButtonfoo1 = (subscriber:string, age:number, adress:string)=> {
