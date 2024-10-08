@@ -5,7 +5,7 @@ type ButtonType = {
     callBack: () => void
 }
 
-export function Task2Button (props:ButtonType) {
+export function MainButton (props:ButtonType) {
     
     
 const OnClickHandler = () => {

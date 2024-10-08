@@ -19,3 +19,7 @@ code {
   margin: 20px; 
   padding: 10px; 
 }
+.input-button-container {
+  display: flex;
+  align-items: center;
+}

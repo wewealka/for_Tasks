@@ -1,4 +1,4 @@
-import { Stars } from "./Star";
+import { Stars } from "../taskForConditional-Rendering/Star"
 
 type RatingType = {
   value: 0 | 1 | 2 | 3 | 4 | 5
