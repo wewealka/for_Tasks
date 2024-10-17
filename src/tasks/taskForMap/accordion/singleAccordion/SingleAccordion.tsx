@@ -1,25 +1,25 @@
 import { useState } from "react";
-import { MainButton } from "../../../../components/Button";
 
 import { AccordionBodyType, AccordionPropsType } from "../../../../data/AccordionData";
 
 export function SingleAccordion(props: AccordionPropsType) {
 
+    const Covered = false 
     let [stateClps, setStateClps] = useState(props.accordionBody)
+    let [TOG, setTOG] = useState(Covered)
+
     const clpsHandlerOn = () => {
-        setStateClps([])
-    }
-    const clpsHandlerOff = () => {
-        setStateClps(props.accordionBody)
+        const newTOG = (!TOG)
+        setTOG(newTOG)
+        setStateClps( newTOG ? [] : props.accordionBody)
+        
     }
     return (
         <div>
-            <h3>{props.title}</h3>
-            <ul >
-                <MainButton name={"covered"} callBack={clpsHandlerOn} />
-                <MainButton name={"Uncovered"} callBack={clpsHandlerOff} />
+            <h3 style={{cursor: "pointer", width: "30px"}} onClick={clpsHandlerOn}>{props.title}</h3>
+            <ul>
                 {stateClps.map((AccordionBody: AccordionBodyType) => (
-                    <li key={AccordionBody.id}>
+                    <li key={AccordionBody.id} >
                         {AccordionBody.content}
                     </li>
                 ))}
