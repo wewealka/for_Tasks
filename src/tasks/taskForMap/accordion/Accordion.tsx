@@ -8,7 +8,6 @@ export function Accordion() {
         <div key={index}>
           <SingleAccordion 
           title={SA.title}
-          collapsed={SA.collapsed}
           accordionBody={SA.accordionBody} />
         </div>
       ))}
