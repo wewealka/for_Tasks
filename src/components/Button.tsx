@@ -3,6 +3,8 @@
 type ButtonType = {
     name:string,
     callBack: () => void
+    style?:React.CSSProperties
+    disabled: boolean
 }
 
 export function MainButton (props:ButtonType) {
@@ -13,7 +15,7 @@ const OnClickHandler = () => {
 } 
 
     return (
-        <button onClick={OnClickHandler}>{props.name}</button>
+        <button style = {props.style} onClick={OnClickHandler}>{props.name}</button>
     )
 }
 
