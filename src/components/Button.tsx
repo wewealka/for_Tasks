@@ -4,7 +4,7 @@ type ButtonType = {
     name:string,
     callBack: () => void
     style?:React.CSSProperties
-    disabled: boolean
+    disabled?: boolean
 }
 
 export function MainButton (props:ButtonType) {
