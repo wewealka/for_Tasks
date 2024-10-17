@@ -7,16 +7,20 @@ import { Accordion } from "../../tasks/taskForMap/accordion/Accordion"
 import { AppTitle } from "../../tasks/taskForMap/AppTitle"
 import { TaskForTrainingUseState } from "../../tasks/TaskForUseState/TaskUSeState"
 import { MainButton } from "../Button"
-import { OnOff } from "../OnOff/OnOff"
+
 import { Delimeter } from "../stupidComponents/Delimeter"
 import { Rating } from "../../tasks/taskForConditional-Rendering/Raiting"
+import OnOff from "../../tasks/TaskForUseState/OnOff"
 
 export const MainBasket = () => {
     return (
         <div className="MainBasket">
-            <TaskForInput/>
-            <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
             <OnOff/>
+            <OnOff/>
+            <OnOff/>
+            <OnOff/>
+            <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
+            <TaskForInput/>
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
             <FilterMethod />
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
