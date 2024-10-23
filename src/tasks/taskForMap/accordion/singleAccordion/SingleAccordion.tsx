@@ -16,7 +16,7 @@ export function SingleAccordion(props: AccordionPropsType) {
     }
     return (
         <div>
-            <h3 style={{cursor: "pointer", width: "30px"}} onClick={clpsHandlerOn}>{props.title}</h3>
+            <h3 style={{cursor: "pointer", width: "30px"}} onClick={clpsHandlerOn}>{props.title} <div>{!TOG ? "uncovered" :"covered"}</div></h3>
             <ul>
                 {stateClps.map((AccordionBody: AccordionBodyType) => (
                     <li key={AccordionBody.id} >
@@ -27,3 +27,33 @@ export function SingleAccordion(props: AccordionPropsType) {
         </div>
     )
 }
+
+
+
+// import { useState } from "react";
+// import { AccordionBodyType, AccordionPropsType } from "../../../../data/AccordionData";
+// type SingleAcc = {
+//     props:AccordionPropsType
+//     TOG:boolean
+//     setTOG: React.Dispatch<React.SetStateAction<boolean>>
+// }
+// export function SingleAccordion(p:SingleAcc) {
+//     let [stateClps, setStateClps] = useState(p.props.accordionBody)
+//     const clpsHandlerOn = () => {
+//         const newTOG = (!p.TOG)
+//         p.setTOG(newTOG)
+//         setStateClps( newTOG ? [] : p.props.accordionBody)        
+//     }
+//     return (
+//         <div>
+//             <h3 style={{cursor: "pointer", width: "30px"}} onClick={clpsHandlerOn}>{p.props.title} </h3>
+//             <ul>
+//                 {stateClps.map((AccordionBody: AccordionBodyType) => (
+//                     <li key={AccordionBody.id} >
+//                         {AccordionBody.content}
+//                     </li>
+//                 ))}
+//             </ul>
+//         </div>
+//     )
+// }
