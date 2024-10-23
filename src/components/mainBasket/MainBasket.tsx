@@ -9,18 +9,31 @@ import { TaskForTrainingUseState } from "../../tasks/TaskForUseState/TaskUSeStat
 import { MainButton } from "../Button"
 import { Delimeter } from "../stupidComponents/Delimeter"
 import { Rating } from "../../tasks/taskForConditional-Rendering/Raiting"
-import OnOff from "../../tasks/TaskForUseState/OnOff"
+import OnOff from "../../tasks/TaskForUseState/Onoff/uncontrolled/OnOff"
+import { ControlledSwitcher } from "../../tasks/TaskForUseState/Onoff/controlled/RenderForControlledSwitcher"
 
 export const MainBasket = () => {
     return (
         <div className="MainBasket">
+            <ControlledSwitcher />
+            <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
+
             <OnOff />
             <OnOff />
             <OnOff />
             <OnOff />
+
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
             <TaskForInput />
+
+            <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
+
+            <Rating />
+
+            <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
+
+            <Accordion />
 
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
@@ -39,14 +52,6 @@ export const MainBasket = () => {
             <Delimeter />{/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
             <AppTitle titles={dataAppTitle} />
-
-            <Delimeter />{/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
-
-            <Accordion />
-
-            <Delimeter />{/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
-
-            <Rating />
 
             <Delimeter />{/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
