@@ -1,9 +1,5 @@
-import styled from "styled-components";
 import { MainButton } from "../../../../components/Button";
 import { useState } from "react";
-
-
-
 
 
 function OnOff () {
@@ -46,7 +42,7 @@ function OnOff () {
     };
     return (
         <div>
-            
+            <p>UnControlledSwitcher</p>
             <MainButton style={OnStyle} name={"On"} callBack={OnSwitchHandler}/>
             <MainButton style={OffStyle} name={"Off"} callBack={OffSwitchHandler}/>
             <div style={IndicatorStyle}></div>
@@ -54,8 +50,4 @@ function OnOff () {
     )
 }
 
-const St = styled.div`
-    background-color: #31aa31;
-    justify-content: center;
-`
 export default OnOff

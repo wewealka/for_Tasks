@@ -8,6 +8,7 @@ export const ControlledSwitcher  = () => {
 
     return (
         <div>
+            <p>ControlledSwitcher</p>
             <OnOffCntrld switchStatus={switchStatus} state={state} setState={setState}/>
         </div>
     )
