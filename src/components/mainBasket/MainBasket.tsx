@@ -11,7 +11,6 @@ import { Delimeter } from "../stupidComponents/Delimeter"
 import { Rating } from "../../tasks/taskForConditional-Rendering/Raiting"
 import OnOff from "../../tasks/TaskForUseState/Onoff/uncontrolled/OnOff"
 import { ControlledSwitcher } from "../../tasks/TaskForUseState/Onoff/controlled/RenderForControlledSwitcher"
-import { dataAccordion } from "../../data/AccordionData"
 
 export const MainBasket = () => {
     return (
