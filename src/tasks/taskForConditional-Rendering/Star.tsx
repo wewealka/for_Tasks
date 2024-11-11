@@ -26,7 +26,6 @@ export function Stars(p:StarsType) {
       >
       {index < (basicState || hover) ? "★" : "☆"}</span>
   })
-
   return (
     <div>
       <button onClick={() => setBasicState(0)}>reset</button>
