@@ -13,4 +13,3 @@ export const Star2 = () => <Stars basicValue={2}/>
 export const Star3 = () => <Stars basicValue={3}/>
 export const Star4 = () => <Stars basicValue={4}/>
 export const Star5 = () => <Stars basicValue={5}/>
-
