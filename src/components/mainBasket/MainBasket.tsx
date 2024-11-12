@@ -11,6 +11,9 @@ import { Delimeter } from "../stupidComponents/Delimeter"
 import { Rating } from "../../tasks/taskForConditional-Rendering/Raiting"
 import OnOff from "../../tasks/TaskForUseState/Onoff/uncontrolled/OnOff"
 import { ControlledSwitcher } from "../../tasks/TaskForUseState/Onoff/controlled/RenderForControlledSwitcher"
+import { dataMessages } from "../../data/inputData"
+import { dataAccordion } from "../../data/AccordionData"
+import { dataMoney } from "../../data/dataFilterMethod"
 
 export const MainBasket = () => {
     return (
@@ -22,23 +25,23 @@ export const MainBasket = () => {
 
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
-            <TaskForInput />
+            <TaskForInput data={dataMessages} />
 
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
-            <Rating />
+            <Rating value={0} />
 
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
-            <Accordion/>
+            <Accordion data={dataAccordion} />
 
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
-            <FilterMethod />
+            <FilterMethod data={dataMoney} />
 
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
-            <TaskForTrainingUseState />
+            <TaskForTrainingUseState value={1} />
 
             <Delimeter />{/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
