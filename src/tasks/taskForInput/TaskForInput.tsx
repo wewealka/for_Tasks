@@ -1,19 +1,21 @@
 
 import { useState } from "react";
 import { FullInput } from "./Full/FullInput";
-import { dataMessages } from "../../data/inputData";
+import { dataMessagesType } from "../../data/inputData";
 import { dataBtnForInputAdd } from "../../data/dataButton";
 import { MainInput } from "./Devided/MainInput";
 import { MainButton } from "../../components/Button";
-import { Delimeter } from "../../components/stupidComponents/Delimeter";
 
+type TaskForInputType = {
+    data: dataMessagesType[]
+}
 
-export const TaskForInput = () => {
+export const TaskForInput = (props:TaskForInputType) => {
     
     let [MainTitle, setMainTitle] = useState("");
     let [FullTitle, setFullTitle] = useState("");
-    let [currentMessages1, setMessages1] = useState(dataMessages)
-    let [currentMessages2, setMessages2] = useState(dataMessages)
+    let [currentMessages1, setMessages1] = useState(props.data)
+    let [currentMessages2, setMessages2] = useState(props.data)
 
     const AddMainTitle = () => {
         if (MainTitle.trim()) {

@@ -1,9 +1,11 @@
 import { useState } from "react"
 
-export function TaskForTrainingUseState() {
+type TaskForTrainingUseStateType = {
+    value: number
+}
 
-    let initional_A = 1
-    let [a, setA] = useState(initional_A)
+export function TaskForTrainingUseState(p: TaskForTrainingUseStateType) {
+    let [a, setA] = useState(p.value)
 
     const OnClickHandlerForTaskUSeState = () => {
         setA(++a)

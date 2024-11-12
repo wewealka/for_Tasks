@@ -1,9 +1,12 @@
 import { Stars } from "../taskForConditional-Rendering/Star"
 
-export function Rating() {
+type RatingType = {
+  value: number
+}
+export function Rating(p:RatingType) {
     return (
       <div>
-        <Stars basicValue={0}/>
+        <Stars basicValue={p.value}/>
       </div>
     );
   }

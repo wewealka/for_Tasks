@@ -1,10 +1,16 @@
-import { dataAccordion } from "../../../data/AccordionData";
-import { SingleAccordion } from "./singleAccordion/SingleAccordion";
 
-export function Accordion() {
+import { SingleAccordion } from "./singleAccordion/SingleAccordion";
+import { AccordionPropsType } from "../../../data/AccordionData";
+
+
+type AccordionType = {
+  data: AccordionPropsType[]
+}
+
+export function Accordion(p:AccordionType) {
   return (
     <div>
-      {dataAccordion.map((SA, index) => (
+      {p.data.map((SA, index) => (
         <div key={index}>
           <SingleAccordion 
           title={SA.title}
