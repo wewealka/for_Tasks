@@ -1,3 +1,9 @@
+
+export type dataMoneyType = {
+    banknots: string
+    value: number
+    number: string
+}
 export let  dataMoney = [
     { banknots: 'Dollars', value: 100, number: ' a1234567890' },
     { banknots: 'Dollars', value: 50, number: ' z1234567890' },
