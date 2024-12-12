@@ -14,10 +14,14 @@ import { ControlledSwitcher } from "../../tasks/TaskForUseState/Onoff/controlled
 import { dataMessages } from "../../data/inputData"
 import { dataAccordion } from "../../data/AccordionData"
 import { dataMoney } from "../../data/dataFilterMethod"
+import { AccordionM } from "../../tasks/taskForMap/accordionmain/AccordionM"
+import { dataAccordionM } from "../../tasks/taskForMap/accordionmain/AccordionDataM"
 
 export const MainBasket = () => {
     return (
         <div className="MainBasket">
+            <AccordionM data={dataAccordionM}/>
+            <Delimeter/>{/*//////////////////////////////////////////////////////////////////////////////////////*/}
             <ControlledSwitcher />
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
 
