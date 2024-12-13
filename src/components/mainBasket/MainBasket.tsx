@@ -20,7 +20,7 @@ import { dataAccordionM } from "../../tasks/taskForMap/accordionmain/AccordionDa
 export const MainBasket = () => {
     return (
         <div className="MainBasket">
-            <AccordionM data={dataAccordionM}/>
+            <AccordionM data={dataAccordionM} fill={true}/>
             <Delimeter/>{/*//////////////////////////////////////////////////////////////////////////////////////*/}
             <ControlledSwitcher />
             <Delimeter /> {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/}
