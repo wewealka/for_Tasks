@@ -16,10 +16,13 @@ import { dataAccordion } from "../../data/AccordionData"
 import { dataMoney } from "../../data/dataFilterMethod"
 import { AccordionM } from "../../tasks/taskForMap/accordionmain/AccordionM"
 import { dataAccordionM } from "../../tasks/taskForMap/accordionmain/AccordionDataM"
+import { RenderCustomSelect } from "../../tasks/customselect/RenderCustomSelect"
 
 export const MainBasket = () => {
     return (
         <div className="MainBasket">
+            <RenderCustomSelect/>
+            <Delimeter/>{/*//////////////////////////////////////////////////////////////////////////////////////*/}
             <AccordionM data={dataAccordionM} fill={true}/>
             <Delimeter/>{/*//////////////////////////////////////////////////////////////////////////////////////*/}
             <ControlledSwitcher />
