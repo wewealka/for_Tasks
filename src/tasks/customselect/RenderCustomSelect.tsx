@@ -49,6 +49,7 @@ export const RenderCustomSelect = () => {
 
             </div>
             {openFactor ? <div>{renderCustomSelects}</div> : ""}
+            <div></div>
         </div>
     )
 }
